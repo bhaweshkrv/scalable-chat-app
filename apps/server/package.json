@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "start": "node dist/index",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "ioredis": "^5.3.2",
+    "socket.io": "^4.7.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "tsc-watch": "^6.0.4",
+    "typescript": "^5.3.3"
+  }
+}
